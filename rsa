@@ -1,17 +1,16 @@
-#!/usr/bin/python3
+#!user/bin/python3
 import sys
-
-
+ 
+ 
 f = open(sys.argv[1], 'r')
 while True:
     for line in f:
         i = 2
         lin = int(line)
-        for i in range(round(5000)):
+        for i in range(round(lin/2 + 2)):
             if i > 1 and lin % i == 0:
                 j = round(lin / i)
                 print(f"{lin}={j}*{i}")
                 break
             i += 1
-    print("239809320265259=15485783*15485773")
-    break
+    break 
